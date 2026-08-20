@@ -241,11 +241,11 @@ USE_MOCK_DATA=true                    # Set to false for live scraping
 DATABASE_URL="file:./biodrift.db"
 
 # Bright Data (only needed when USE_MOCK_DATA=false)
-BRIGHTDATA_API_TOKEN=
-BRIGHTDATA_COLLECTOR_CW=
-BRIGHTDATA_COLLECTOR_ISRCTN=
-BRIGHTDATA_COLLECTOR_CRUK=
-BRIGHTDATA_COLLECTOR_DRUGS=
+BRIGHTDATA_API_TOKEN=your_api_token_here
+BRIGHTDATA_COLLECTOR_CW=your_collector_id
+BRIGHTDATA_COLLECTOR_ISRCTN=your_collector_id
+BRIGHTDATA_COLLECTOR_CRUK=your_collector_id
+BRIGHTDATA_COLLECTOR_DRUGS=your_collector_id
 ```
 
 ### Available Scripts
