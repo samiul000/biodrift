@@ -1,0 +1,401 @@
+[
+  {
+    "drugTradeName": "Steglujan",
+    "activeSubstance": "ertugliflozin",
+    "product_page_url": "https://www.drugs.com/steglujan.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Ozempic",
+    "activeSubstance": "semaglutide",
+    "product_page_url": "https://www.drugs.com/ozempic.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Solosec",
+    "activeSubstance": "secnidazole",
+    "product_page_url": "https://www.drugs.com/solosec.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Xadago",
+    "activeSubstance": "safinamide",
+    "product_page_url": "https://www.drugs.com/xadago.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Benznidazole Opt out of the sale or sharing of personal information",
+    "activeSubstance": "benznidazole",
+    "product_page_url": "https://www.drugs.com/benznidazole.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Dupixent",
+    "activeSubstance": "dupilumab",
+    "product_page_url": "https://www.drugs.com/dupixent.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Trulance",
+    "activeSubstance": "plecanatide",
+    "product_page_url": "https://www.drugs.com/trulance.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Rhopressa (Ophthalmic)",
+    "activeSubstance": "netarsudil",
+    "product_page_url": "https://www.drugs.com/cons/rhopressa.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Ixifi (Intravenous)",
+    "activeSubstance": "infliximab",
+    "product_page_url": "https://www.drugs.com/cons/ixifi-intravenous.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Eskata: Package Insert / Prescribing Info",
+    "activeSubstance": "hydrogen",
+    "product_page_url": "https://www.drugs.com/pro/eskata.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Duzallo",
+    "activeSubstance": "allopurinol",
+    "product_page_url": "https://www.drugs.com/duzallo.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Synera Patches Opt out of the sale or sharing of personal information",
+    "activeSubstance": "lidocaine",
+    "product_page_url": "https://www.drugs.com/synera.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Doribax",
+    "activeSubstance": "doripenem",
+    "product_page_url": "https://www.drugs.com/doribax.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Tasigna Opt out of the sale or sharing of personal information",
+    "activeSubstance": "nilotinib",
+    "product_page_url": "https://www.drugs.com/tasigna.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Xyzal",
+    "activeSubstance": "levocetirizine",
+    "product_page_url": "https://www.drugs.com/xyzal.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Divigel",
+    "activeSubstance": "estradiol",
+    "product_page_url": "https://www.drugs.com/divigel.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Cyclobenzaprine",
+    "product_page_url": "https://www.drugs.com/cyclobenzaprine.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Letairis",
+    "activeSubstance": "ambrisentan",
+    "product_page_url": "https://www.drugs.com/letairis.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "ACAM2000",
+    "activeSubstance": "smallpox",
+    "product_page_url": "https://www.drugs.com/acam2000.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Exforge",
+    "activeSubstance": "amlodipine",
+    "product_page_url": "https://www.drugs.com/exforge.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Privigen",
+    "activeSubstance": "immune",
+    "product_page_url": "https://www.drugs.com/privigen.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Endometrin",
+    "activeSubstance": "progesterone",
+    "product_page_url": "https://www.drugs.com/endometrin.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Extina",
+    "activeSubstance": "ketoconazole",
+    "product_page_url": "https://www.drugs.com/extina.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Bromfenac (ophthalmic)",
+    "activeSubstance": "bromfenac",
+    "product_page_url": "https://www.drugs.com/mtm/bromfenac-ophthalmic.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Ephedrine (Monograph)",
+    "product_page_url": "https://www.drugs.com/monograph/ephedrine-sulfate.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Probuphine Implant",
+    "activeSubstance": "buprenorphine",
+    "product_page_url": "https://www.drugs.com/probuphine.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Odefsey",
+    "activeSubstance": "emtricitabine,",
+    "product_page_url": "https://www.drugs.com/odefsey.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Carnexiv: Package Insert / Prescribing Info",
+    "activeSubstance": "carbamazepine",
+    "product_page_url": "https://www.drugs.com/pro/carnexiv.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Otovel (otic) Opt out of the sale or sharing of personal information",
+    "activeSubstance": "ciprofloxacin",
+    "product_page_url": "https://www.drugs.com/mtm/otovel-otic.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Xiidra Eye Drops",
+    "activeSubstance": "lifitegrast",
+    "product_page_url": "https://www.drugs.com/xiidra.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Pylarify",
+    "activeSubstance": "piflufolastat",
+    "product_page_url": "https://www.drugs.com/pylarify.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Recorlev",
+    "activeSubstance": "levoketoconazole",
+    "product_page_url": "https://www.drugs.com/recorlev.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Roszet Opt out of the sale or sharing of personal information",
+    "activeSubstance": "ezetimibe",
+    "product_page_url": "https://www.drugs.com/roszet.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Lybalvi",
+    "activeSubstance": "olanzapine",
+    "product_page_url": "https://www.drugs.com/lybalvi.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Orilissa",
+    "activeSubstance": "elagolix",
+    "product_page_url": "https://www.drugs.com/orilissa.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Emgality",
+    "activeSubstance": "galcanezumab",
+    "approvalDate": "2001-09-27T00:00:00.000Z",
+    "product_page_url": "https://www.drugs.com/emgality.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Elepsia XR: Package Insert / Prescribing Info",
+    "activeSubstance": "levetiracetam",
+    "product_page_url": "https://www.drugs.com/pro/elepsia-xr.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Annovera Vaginal Ring",
+    "activeSubstance": "ethinyl",
+    "product_page_url": "https://www.drugs.com/annovera.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Motegrity Opt out of the sale or sharing of personal information",
+    "activeSubstance": "prucalopride",
+    "product_page_url": "https://www.drugs.com/motegrity.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Libtayo",
+    "activeSubstance": "cemiplimab-rwlc",
+    "product_page_url": "https://www.drugs.com/libtayo.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Arakoda",
+    "activeSubstance": "tafenoquine",
+    "product_page_url": "https://www.drugs.com/arakoda.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Xospata",
+    "activeSubstance": "gilteritinib",
+    "product_page_url": "https://www.drugs.com/xospata.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Azedra (Intravenous)",
+    "activeSubstance": "iobenguane",
+    "product_page_url": "https://www.drugs.com/mtm/azedra.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Primatene Mist Inhaler",
+    "activeSubstance": "epinephrine",
+    "product_page_url": "https://www.drugs.com/mtm/primatene-mist-inhaler.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Adlarity",
+    "activeSubstance": "donepezil",
+    "product_page_url": "https://www.drugs.com/adlarity.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Iheezo Ophthalmic Gel: Package Insert / Prescribing Info",
+    "activeSubstance": "chloroprocaine",
+    "product_page_url": "https://www.drugs.com/pro/iheezo-ophthalmic-gel.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Carvykti",
+    "activeSubstance": "ciltacabtagene",
+    "product_page_url": "https://www.drugs.com/carvykti.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Sunlenca",
+    "activeSubstance": "lenacapavir",
+    "product_page_url": "https://www.drugs.com/sunlenca.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Kimmtrak",
+    "activeSubstance": "tebentafusp-tebn",
+    "product_page_url": "https://www.drugs.com/kimmtrak.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  },
+  {
+    "drugTradeName": "Lunsumio",
+    "activeSubstance": "mosunetuzumab",
+    "product_page_url": "https://www.drugs.com/lunsumio.html",
+    "input": {
+      "url": "https://www.drugs.com/newdrugs.html"
+    }
+  }
+]

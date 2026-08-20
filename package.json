@@ -1,0 +1,22 @@
+{
+  "name": "biodrift",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "fetch": "npm run fetch -w packages/scraper-service",
+    "seed": "npm run seed -w packages/scraper-service",
+    "combine": "npm run combine -w packages/scraper-service",
+    "heal": "npm run heal -w packages/scraper-service",
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web",
+    "studio": "npx prisma studio -w packages/scraper-service"
+  },
+  "allowScripts": {
+    "@prisma/client@5.22.0": true,
+    "prisma@5.22.0": true
+  }
+}

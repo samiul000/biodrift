@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model RawTrial {
+  id          String   @id @default(cuid())
+  source      String   // EU-CTR, Health Canada, CenterWatch, EMA
+  recordId    String   // original ID from source
+  data        String   // raw JSON payload
+  ingestedAt  DateTime @default(now())
+}
+
+model NormalizedTrial {
+  id              String   @id @default(cuid())
+  trialId         String   @unique
+  source          String
+  brandName       String?
+  activeSubstance String?
+  indication      String?
+  phase           String?
+  status          String?
+  sponsor         String?
+  completionDate  String?
+  createdAt       DateTime @default(now())
+}
+
+model PatentCliff {
+  id                      String   @id @default(cuid())
+  activeSubstance         String   @unique
+  tradeName               String?
+  authHolder              String?
+  patentExpiryDate        String?
+  daysToCliff             Int?
+  cliffStatus             String?
+  originatorDefenseTrials Int?
+  genericCompetitorTrials Int?
+  threatLevel             String?
+  insights                String?
+  createdAt               DateTime @default(now())
+}
+
+model HealEvent {
+  id          String   @id @default(cuid())
+  collectorId String
+  status      String   // AUTO_HEALED, DRIFT_DETECTED, HEALTHY
+  diagnostic  String?
+  timestamp   DateTime @default(now())
+}
