@@ -447,8 +447,8 @@ The cached data includes:
 
 ## Links
 
-- **[Demo Video Link](#)** — 3-minute walkthrough (placeholder)
-- **[Live Demo Link](#)** — Vercel deployment (placeholder)
+- **[Demo Video Link](#)**
+- **[Live Demo Link](#)**
 
 ---
 
