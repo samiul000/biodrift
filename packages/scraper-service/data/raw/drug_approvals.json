@@ -1,7 +1,6 @@
 [
   {
     "drugTradeName": "Steglujan",
-    "activeSubstance": "ertugliflozin",
     "product_page_url": "https://www.drugs.com/steglujan.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -9,7 +8,6 @@
   },
   {
     "drugTradeName": "Ozempic",
-    "activeSubstance": "semaglutide",
     "product_page_url": "https://www.drugs.com/ozempic.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -17,7 +15,6 @@
   },
   {
     "drugTradeName": "Solosec",
-    "activeSubstance": "secnidazole",
     "product_page_url": "https://www.drugs.com/solosec.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -25,7 +22,6 @@
   },
   {
     "drugTradeName": "Xadago",
-    "activeSubstance": "safinamide",
     "product_page_url": "https://www.drugs.com/xadago.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -33,7 +29,6 @@
   },
   {
     "drugTradeName": "Benznidazole Opt out of the sale or sharing of personal information",
-    "activeSubstance": "benznidazole",
     "product_page_url": "https://www.drugs.com/benznidazole.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -41,7 +36,6 @@
   },
   {
     "drugTradeName": "Dupixent",
-    "activeSubstance": "dupilumab",
     "product_page_url": "https://www.drugs.com/dupixent.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -49,7 +43,6 @@
   },
   {
     "drugTradeName": "Trulance",
-    "activeSubstance": "plecanatide",
     "product_page_url": "https://www.drugs.com/trulance.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -57,7 +50,6 @@
   },
   {
     "drugTradeName": "Rhopressa (Ophthalmic)",
-    "activeSubstance": "netarsudil",
     "product_page_url": "https://www.drugs.com/cons/rhopressa.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -65,7 +57,6 @@
   },
   {
     "drugTradeName": "Ixifi (Intravenous)",
-    "activeSubstance": "infliximab",
     "product_page_url": "https://www.drugs.com/cons/ixifi-intravenous.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -73,7 +64,6 @@
   },
   {
     "drugTradeName": "Eskata: Package Insert / Prescribing Info",
-    "activeSubstance": "hydrogen",
     "product_page_url": "https://www.drugs.com/pro/eskata.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -81,7 +71,6 @@
   },
   {
     "drugTradeName": "Duzallo",
-    "activeSubstance": "allopurinol",
     "product_page_url": "https://www.drugs.com/duzallo.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -89,7 +78,6 @@
   },
   {
     "drugTradeName": "Synera Patches Opt out of the sale or sharing of personal information",
-    "activeSubstance": "lidocaine",
     "product_page_url": "https://www.drugs.com/synera.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -97,7 +85,6 @@
   },
   {
     "drugTradeName": "Doribax",
-    "activeSubstance": "doripenem",
     "product_page_url": "https://www.drugs.com/doribax.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -105,7 +92,6 @@
   },
   {
     "drugTradeName": "Tasigna Opt out of the sale or sharing of personal information",
-    "activeSubstance": "nilotinib",
     "product_page_url": "https://www.drugs.com/tasigna.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -113,7 +99,6 @@
   },
   {
     "drugTradeName": "Xyzal",
-    "activeSubstance": "levocetirizine",
     "product_page_url": "https://www.drugs.com/xyzal.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -121,7 +106,6 @@
   },
   {
     "drugTradeName": "Divigel",
-    "activeSubstance": "estradiol",
     "product_page_url": "https://www.drugs.com/divigel.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -136,7 +120,6 @@
   },
   {
     "drugTradeName": "Letairis",
-    "activeSubstance": "ambrisentan",
     "product_page_url": "https://www.drugs.com/letairis.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"
@@ -144,7 +127,6 @@
   },
   {
     "drugTradeName": "ACAM2000",
-    "activeSubstance": "smallpox",
     "product_page_url": "https://www.drugs.com/acam2000.html",
     "input": {
       "url": "https://www.drugs.com/newdrugs.html"

@@ -41,3 +41,6 @@ packages/scraper-service/prisma/migrations/
 
 # Generated data
 apps/web/data/unified_dashboard_data.json
+
+# Opencode Instructions
+INSTRUCTION.md

@@ -57,7 +57,7 @@ function ProgressBar({ days }: { days: number }) {
     days <= 730 ? "bg-red-500" : days <= 1460 ? "bg-amber-500" : "bg-emerald-500";
 
   return (
-    <div className="w-full h-2 bg-bio-700 rounded-full overflow-hidden">
+    <div className="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
       <div className={`h-full ${color} rounded-full`} style={{ width: `${pct}%` }} />
     </div>
   );
@@ -68,11 +68,15 @@ export function PatentCliffsClient({ cliffs }: { cliffs: CliffReport[] }) {
     (a, b) => (a.daysToCliff ?? Infinity) - (b.daysToCliff ?? Infinity)
   );
 
-  const chartData = sorted.map((c) => ({
-    name: c.tradeName || c.activeSubstance,
-    defense: c.originatorDefenseTrials,
-    generic: c.genericCompetitorTrials,
-  }));
+  const chartData = sorted
+    .filter((c) => c.originatorDefenseTrials > 0 || c.genericCompetitorTrials > 0)
+    .sort((a, b) => (b.originatorDefenseTrials + b.genericCompetitorTrials) - (a.originatorDefenseTrials + a.genericCompetitorTrials))
+    .slice(0, 20)
+    .map((c) => ({
+      name: c.tradeName || c.activeSubstance,
+      defense: c.originatorDefenseTrials,
+      generic: c.genericCompetitorTrials,
+    }));
 
   return (
     <div className="space-y-6">
@@ -83,28 +87,35 @@ export function PatentCliffsClient({ cliffs }: { cliffs: CliffReport[] }) {
         </p>
       </div>
 
-      <div className="bg-bio-800 border border-bio-600 rounded-xl p-5">
+      <div className="glass-card p-5">
         <h2 className="text-lg font-semibold mb-4">Defense vs Competitor Trials</h2>
         <ResponsiveContainer width="100%" height={250}>
           <BarChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#243044" />
-            <XAxis dataKey="name" stroke="#9ca3af" fontSize={11} />
-            <YAxis stroke="#9ca3af" fontSize={12} />
-            <Tooltip contentStyle={{ background: "#1a2332", border: "1px solid #243044" }} />
-            <Bar dataKey="defense" name="Originator Defense" fill="#22d3ee" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="generic" name="Generic Competitors" fill="#f87171" radius={[4, 4, 0, 0]} />
+            <CartesianGrid strokeDasharray="3 3" stroke="#3f4943" />
+            <XAxis dataKey="name" stroke="#bec9c1" fontSize={11} />
+            <YAxis stroke="#bec9c1" fontSize={12} />
+            <Tooltip
+              contentStyle={{
+                background: "#262c29",
+                border: "1px solid #3f4943",
+                borderRadius: 12,
+              }}
+              cursor={{ fill: "rgba(255,255,255,0.05)" }}
+            />
+            <Bar dataKey="defense" name="Originator Defense" fill="#7adda4" radius={[8, 8, 0, 0]} />
+            <Bar dataKey="generic" name="Generic Competitors" fill="#f87171" radius={[8, 8, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {sorted.map((cliff) => (
-          <div key={cliff.activeSubstance} className="bg-bio-800 border border-bio-600 rounded-xl p-5 space-y-4">
+          <div key={cliff.activeSubstance} className="glass-card p-5 space-y-4">
             <div className="flex items-start justify-between">
               <div>
                 <h3 className="text-lg font-semibold">{cliff.tradeName || cliff.activeSubstance}</h3>
-                <p className="text-sm text-gray-400">{cliff.authHolder}</p>
-                <p className="text-xs text-bio-300 mt-1">{cliff.activeSubstance}</p>
+                <p className="text-sm text-on-surface-variant">{cliff.authHolder}</p>
+                <p className="text-xs text-primary mt-1">{cliff.activeSubstance}</p>
               </div>
               <span className={`px-2.5 py-1 rounded-full text-xs font-medium border ${getStatusColor(cliff.cliffStatus)}`}>
                 {cliff.cliffStatus?.replace("_", " ")}
@@ -126,7 +137,7 @@ export function PatentCliffsClient({ cliffs }: { cliffs: CliffReport[] }) {
 
             <div className="flex items-center gap-6 text-sm">
               <div className="flex items-center gap-1.5">
-                <Swords size={14} className="text-cyan-400" />
+                <Swords size={14} className="text-tertiary" />
                 <span className="text-gray-400">Defense:</span>
                 <span className="font-medium">{cliff.originatorDefenseTrials}</span>
               </div>
@@ -143,7 +154,7 @@ export function PatentCliffsClient({ cliffs }: { cliffs: CliffReport[] }) {
             </div>
 
             {cliff.insights && (
-              <div className="flex items-start gap-2 bg-bio-700/50 rounded-lg p-3">
+              <div className="flex items-start gap-2 glass-inset p-3">
                 <Lightbulb size={14} className="text-amber-400 mt-0.5 shrink-0" />
                 <p className="text-xs text-gray-300">{cliff.insights}</p>
               </div>

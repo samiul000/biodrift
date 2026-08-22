@@ -43,7 +43,7 @@ function MetricCard({
   color: string;
 }) {
   return (
-    <div className="bg-bio-800 border border-bio-600 rounded-xl p-5">
+    <div className="glass-card p-5">
       <div className="flex items-center gap-3 mb-2">
         <Icon size={20} className={color} />
         <span className="text-sm text-gray-400">{label}</span>
@@ -106,33 +106,40 @@ export function DashboardClient({ data }: { data: DashboardData }) {
         <MetricCard label="System Health" value={systemHealth} icon={HeartPulse} color="text-emerald-400" />
       </div>
 
-      <div className="bg-bio-800 border border-bio-600 rounded-xl p-5">
+      <div className="glass-card p-5">
         <h2 className="text-lg font-semibold mb-4">Trials by Source Registry</h2>
         <ResponsiveContainer width="100%" height={200}>
           <BarChart data={sourceBreakdown}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#243044" />
-            <XAxis dataKey="name" stroke="#9ca3af" fontSize={12} />
-            <YAxis stroke="#9ca3af" fontSize={12} />
-            <Tooltip contentStyle={{ background: "#1a2332", border: "1px solid #243044" }} />
-            <Bar dataKey="count" fill="#22d3ee" radius={[4, 4, 0, 0]} />
+            <CartesianGrid strokeDasharray="3 3" stroke="#3f4943" />
+            <XAxis dataKey="name" stroke="#bec9c1" fontSize={12} />
+            <YAxis stroke="#bec9c1" fontSize={12} />
+            <Tooltip
+              contentStyle={{
+                background: "#262c29",
+                border: "1px solid #3f4943",
+                borderRadius: 12,
+              }}
+              cursor={{ fill: "rgba(255,255,255,0.05)" }}
+            />
+            <Bar dataKey="count" fill="#7adda4" radius={[8, 8, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
 
-      <div className="bg-bio-800 border border-bio-600 rounded-xl p-5">
+      <div className="glass-card p-5">
         <div className="flex items-center gap-2 mb-4">
           <Filter size={16} className="text-gray-400" />
           <h2 className="text-lg font-semibold">Trial Explorer</h2>
         </div>
 
         <div className="flex gap-3 mb-4 flex-wrap">
-          <select value={sourceFilter} onChange={(e) => setSourceFilter(e.target.value)} className="bg-bio-700 border border-bio-600 rounded-lg px-3 py-1.5 text-sm text-gray-200">
+          <select value={sourceFilter} onChange={(e) => setSourceFilter(e.target.value)} className="glass-chip rounded-full px-4 py-1.5 text-sm text-on-surface">
             {sources.map((s) => (<option key={s} value={s}>Source: {s}</option>))}
           </select>
-          <select value={phaseFilter} onChange={(e) => setPhaseFilter(e.target.value)} className="bg-bio-700 border border-bio-600 rounded-lg px-3 py-1.5 text-sm text-gray-200">
+          <select value={phaseFilter} onChange={(e) => setPhaseFilter(e.target.value)} className="glass-chip rounded-full px-4 py-1.5 text-sm text-on-surface">
             {phases.map((p) => (<option key={p} value={p}>Phase: {p}</option>))}
           </select>
-          <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} className="bg-bio-700 border border-bio-600 rounded-lg px-3 py-1.5 text-sm text-gray-200">
+          <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} className="glass-chip rounded-full px-4 py-1.5 text-sm text-on-surface">
             {statuses.map((s) => (<option key={s} value={s}>Status: {s}</option>))}
           </select>
         </div>
@@ -140,7 +147,7 @@ export function DashboardClient({ data }: { data: DashboardData }) {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-bio-600 text-gray-400">
+              <tr className="border-b border-white/10 text-on-surface-variant">
                 <th className="text-left py-2 px-3">Trial ID</th>
                 <th className="text-left py-2 px-3">Source</th>
                 <th className="text-left py-2 px-3">Drug</th>
@@ -152,10 +159,10 @@ export function DashboardClient({ data }: { data: DashboardData }) {
             </thead>
             <tbody>
               {filtered.map((t) => (
-                <tr key={t.trialId} className="border-b border-bio-700 hover:bg-bio-700/50">
-                  <td className="py-2 px-3 font-mono text-xs text-bio-300">{t.trialId}</td>
+                <tr key={t.trialId} className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                  <td className="py-2 px-3 font-mono text-xs text-primary">{t.trialId}</td>
                   <td className="py-2 px-3">
-                    <span className="px-2 py-0.5 rounded-full text-xs bg-bio-600 text-bio-100">{t.source}</span>
+                    <span className="px-2 py-0.5 rounded-full text-xs glass-chip text-on-surface">{t.source}</span>
                   </td>
                   <td className="py-2 px-3">{t.brandName || t.activeSubstance}</td>
                   <td className="py-2 px-3 text-gray-300">{t.indication}</td>

@@ -17,11 +17,13 @@ const DATA_DIR = join(import.meta.dirname, "..", "data", "raw");
 const COLLECTORS = {
   centerwatch: {
     schema: RawCenterWatchSchema,
-    collectorId: process.env.BRIGHTDATA_COLLECTOR_CW || "c_centerwatch_collector",
+    collectorId:
+      process.env.BRIGHTDATA_COLLECTOR_CW || "c_centerwatch_collector",
   },
   isrctn: {
     schema: RawISRCTNSchema,
-    collectorId: process.env.BRIGHTDATA_COLLECTOR_ISRCTN || "c_isrctn_collector",
+    collectorId:
+      process.env.BRIGHTDATA_COLLECTOR_ISRCTN || "c_isrctn_collector",
   },
   cancer_research_uk: {
     schema: RawCancerResearchUKSchema,
@@ -39,15 +41,18 @@ interface HealResult {
   diagnostic?: string;
 }
 
-function validateSource(name: string, config: (typeof COLLECTORS)[keyof typeof COLLECTORS]): HealResult {
+function validateSource(
+  name: string,
+  config: (typeof COLLECTORS)[keyof typeof COLLECTORS],
+): HealResult {
   const { schema, collectorId } = config;
   const filePath = join(DATA_DIR, `${name}.json`);
-  
+
   if (!existsSync(filePath)) {
     return {
       collectorId,
       status: "DRIFT_DETECTED",
-      diagnostic: `No data file found — collector may not have returned data yet.`,
+      diagnostic: `No data file found! collector may not have returned data yet.`,
     };
   }
 
@@ -94,9 +99,13 @@ function validateSource(name: string, config: (typeof COLLECTORS)[keyof typeof C
 async function attemptHeal(result: HealResult): Promise<HealResult> {
   if (result.status !== "DRIFT_DETECTED") return result;
 
-  console.log(`[heal] Drift detected for ${result.collectorId}. Attempting self-heal...`);
+  console.log(
+    `[heal] Drift detected for ${result.collectorId}. Attempting self-heal...`,
+  );
   console.log(`[heal] Diagnostic: ${result.diagnostic}`);
-  console.log(`[heal] Would execute: bdata scraper heal ${result.collectorId} "${result.diagnostic}"`);
+  console.log(
+    `[heal] Would execute: bdata scraper heal ${result.collectorId} "${result.diagnostic}"`,
+  );
 
   await prisma.healEvent.create({
     data: {
@@ -120,7 +129,12 @@ async function main() {
     const healed = await attemptHeal(result);
     results.push(healed);
 
-    const icon = healed.status === "HEALTHY" ? "✅" : healed.status === "AUTO_HEALED" ? "🔧" : "❌";
+    const icon =
+      healed.status === "HEALTHY"
+        ? "✅"
+        : healed.status === "AUTO_HEALED"
+          ? "🔧"
+          : "❌";
     console.log(`[heal] ${icon} ${healed.collectorId}: ${healed.status}`);
   }
 
@@ -128,10 +142,14 @@ async function main() {
   const healed = results.filter((r) => r.status === "AUTO_HEALED").length;
   const failed = results.filter((r) => r.status === "DRIFT_DETECTED").length;
 
-  console.log(`\n[heal] Summary: ${healthy} healthy, ${healed} auto-healed, ${failed} failed`);
+  console.log(
+    `\n[heal] Summary: ${healthy} healthy, ${healed} auto-healed, ${failed} failed`,
+  );
 
   if (failed > 0) {
-    console.log("[heal] Some collectors could not be auto-healed. Manual intervention required.");
+    console.log(
+      "[heal] Some collectors could not be auto-healed. Manual intervention required.",
+    );
     process.exit(1);
   }
 
