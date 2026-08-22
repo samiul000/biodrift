@@ -9,7 +9,7 @@ const DATA_DIR = join(
   "packages",
   "scraper-service",
   "data",
-  "raw"
+  "raw",
 );
 
 const CORRUPT_MAP: Record<string, string[]> = {
@@ -22,7 +22,10 @@ const CORRUPT_MAP: Record<string, string[]> = {
 const SEED_VALUES: Record<string, Record<string, string>> = {
   drug_approvals: { activeSubstance: "Unknown Substance" },
   centerwatch: { trialPhase: "Phase I", recruitmentStatus: "Recruiting" },
-  cancer_research_uk: { trialPhase: "Phase I", recruitmentStatus: "Recruiting" },
+  cancer_research_uk: {
+    trialPhase: "Phase I",
+    recruitmentStatus: "Recruiting",
+  },
   isrctn: { trialTitle: "Untitled Trial" },
 };
 
@@ -31,8 +34,10 @@ export async function POST(req: Request) {
 
   if (!collector || !CORRUPT_MAP[collector]) {
     return NextResponse.json(
-      { error: `Unknown collector. Valid: ${Object.keys(CORRUPT_MAP).join(", ")}` },
-      { status: 400 }
+      {
+        error: `Unknown collector. Valid: ${Object.keys(CORRUPT_MAP).join(", ")}`,
+      },
+      { status: 400 },
     );
   }
 
@@ -76,6 +81,6 @@ export async function POST(req: Request) {
     corrupted: corruptCount,
     total: records.length,
     fieldsRemoved: fieldsToCorrupt,
-    message: `Corrupted ${corruptCount}/${records.length} records — removed: ${fieldsToCorrupt.join(", ")}`,
+    message: `Corrupted ${corruptCount}/${records.length} records removed: ${fieldsToCorrupt.join(", ")}`,
   });
 }
