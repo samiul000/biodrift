@@ -53,6 +53,18 @@ Biotech researchers and investors face a **$2.8 billion problem**: tracking clin
 
 ---
 
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="assets/page1.png" alt="Screenshot 1" width="100%"></td>
+    <td><img src="assets/page2.png" alt="Screenshot 2" width="100%"></td>
+    <td><img src="assets/page3.png" alt="Screenshot 3" width="100%"></td>
+  </tr>
+</table>
+
+---
+
 ## Architecture
 
 ```mermaid
@@ -454,7 +466,7 @@ The cached data includes:
 
 ## License
 
-MIT
+**[MIT](LICENSE)**
 
 ---
 
@@ -464,3 +476,4 @@ MIT
 - **[WeMakeDevs](https://wemakedevs.org)**: Hackathon organization and community support
 - **Opencode**: Coding assistant, under my supervision.
 - **Gemini 3.7 Flash**: Research and text formatting, under my supervision.
+- **ElevenLabs**: Voice-over in the demo video.
